@@ -1,0 +1,5 @@
+# IntelliJ project files
+.idea
+drug_curves/imports/
+geckodriver.log
+PricerxPrices.db
