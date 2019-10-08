@@ -11,11 +11,13 @@ path = Path(os.path.abspath(__file__))
 import_dir = os.path.join(os.path.dirname(path.parent), "drug_curves", "imports", file)
 
 
-def add_prices(df, drug_strain):
+def add_prices(df):
     for index, row in df.iterrows():
+        drug = Drug.get(name=row["Drug Name"], manufacturer=row["Manufacturer"])
+        strain = DrugStrain.get(drug=drug, strength=row["Strength"], form="Vials", package=row["Vials"])
         date = row['Effective Date'].date()
         price = row['Price']
-        p = Price(strain=drug_strain, date=date, price=price)
+        p = Price(strain=strain, date=date, price=price)
         p.save()
 
 

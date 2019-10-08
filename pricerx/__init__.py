@@ -1,1 +1,1 @@
-from .models import Drug, DrugStrain, Price
+from .models import Drug, DrugStrain, Price, db
