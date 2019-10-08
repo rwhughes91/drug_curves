@@ -9,6 +9,7 @@ from selenium.common.exceptions import TimeoutException
 import time
 import pyautogui
 
+
 def scrape_with_selenium():
     cap = DesiredCapabilities().FIREFOX
     path = r"/Users/roberthughes/ds_projects/geckodriver"

@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a013e76-ef5a-45b1-94e7-c33dc211a09f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drug_curves/norepinephrine/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drug_curves/norepinephrine/norepinephrine_drug_curve.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drug_curves/test_curve_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pricerx/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pricerx/pricerx_scrape.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pricerx/creating.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drug_curves/curve_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/curve_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/.ipynb_checkpoints/norepinephrine_drug_curve-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/norepinephrine/.ipynb_checkpoints/norepinephrine_drug_curve-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/norepinephrine_drug_curve.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/norepinephrine/norepinephrine_drug_curve.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pricerx/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pricerx/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pricerx/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pricerx/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pricerx/pricerx_scrape.py" beforeDir="false" afterPath="$PROJECT_DIR$/pricerx/pricerx_scrape.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,20 +21,40 @@
     <favorites_list name="drug_curves" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pricerx/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.54512376">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/pricerx/creating.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="861">
+                  <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+                  <folding>
+                    <element signature="e#0#9#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/pricerx/models.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="239">
+                  <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#0#20#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -61,13 +80,16 @@
       <list>
         <option value="$PROJECT_DIR$/curve_functions.py" />
         <option value="$PROJECT_DIR$/drug_curves/norepinephrine/norepinephrine_drug_curve.ipynb" />
-        <option value="$PROJECT_DIR$/pricerx/pricerx_scrape.py" />
         <option value="$PROJECT_DIR$/pricerx/database.py" />
         <option value="$PROJECT_DIR$/drug_curves/__init__.py" />
         <option value="$PROJECT_DIR$/drug_curves/norepinephrine/__init__.py" />
-        <option value="$PROJECT_DIR$/drug_curves/curve_functions.py" />
         <option value="$PROJECT_DIR$/drug_curves/test_curve_functions.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/pricerx/__init__.py" />
+        <option value="$PROJECT_DIR$/pricerx/pricerx_scrape.py" />
+        <option value="$PROJECT_DIR$/drug_curves/curve_functions.py" />
+        <option value="$PROJECT_DIR$/pricerx/creating.py" />
         <option value="$PROJECT_DIR$/pricerx/models.py" />
       </list>
     </option>
@@ -91,6 +113,17 @@
             <path>
               <item name="drug_curves" type="b2602c69:ProjectViewProjectNode" />
               <item name="drug_curves" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drug_curves" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drug_curves" type="462c0819:PsiDirectoryNode" />
+              <item name="drug_curves" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drug_curves" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drug_curves" type="462c0819:PsiDirectoryNode" />
+              <item name="drug_curves" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="drug_curves" type="b2602c69:ProjectViewProjectNode" />
@@ -135,7 +168,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.models">
+  <component name="RunManager" selected="Python.creating">
+    <configuration name="__init__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="drug_curves" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pricerx" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pricerx/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="drug_curves" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -169,6 +221,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="creating" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="drug_curves" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pricerx" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pricerx/creating.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -218,17 +289,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pricerx_scrape" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="drug_curves" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pricerx" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pricerx/pricerx_scrape.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -239,15 +310,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.curve_functions" />
-      <item itemvalue="Python.pricerx_scrape" />
       <item itemvalue="Python.__init__" />
       <item itemvalue="Python.models" />
+      <item itemvalue="Python.creating" />
+      <item itemvalue="Python.__init__ (1)" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.creating" />
         <item itemvalue="Python.models" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.__init__ (1)" />
         <item itemvalue="Python.__init__" />
-        <item itemvalue="Python.pricerx_scrape" />
       </list>
     </recent_temporary>
   </component>
@@ -267,12 +342,12 @@
       <updated>1570037444931</updated>
       <workItem from="1570037449950" duration="6277000" />
       <workItem from="1570066101042" duration="703000" />
-      <workItem from="1570305746789" duration="16538000" />
+      <workItem from="1570305746789" duration="31482000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23518000" />
+    <option name="totallyTimeSpent" value="38462000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -285,9 +360,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="959" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.60072595" visible="true" weight="0.12942614" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.60072595" visible="true" weight="0.16117217" />
       <window_info id="Structure" order="1" sideWeight="0.5009074" side_tool="true" weight="0.15262516" />
       <window_info id="Favorites" order="2" sideWeight="0.39927405" side_tool="true" weight="0.15262516" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -302,15 +376,15 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3276699" />
-      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.30461165" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.3131068" />
       <window_info anchor="bottom" id="Jupyter" order="13" weight="0.32969698" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.35253054" visible="true" weight="0.13736264" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.35253054" weight="0.2991453" />
       <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="right" id="R Packages" order="5" sideWeight="0.49909255" weight="0.32967034" />
-      <window_info anchor="right" x="0" y="0" width="370" height="757" id="Documentation" order="6" sideWeight="0.64746946" side_tool="true" visible="true" weight="0.13736264" />
+      <window_info anchor="right" x="0" y="0" width="370" height="757" id="Documentation" order="6" sideWeight="0.64746946" side_tool="true" weight="0.2991453" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" />
     </layout>
@@ -332,21 +406,6 @@
     <entry file="file://$PROJECT_DIR$/geckodriver.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pricerx/pricerx_scrape.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4362" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/peewee.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3276">
@@ -355,9 +414,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -379,16 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/curve_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/ds_projects/drug_curves/pricing/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-386">
@@ -406,10 +452,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pricerx/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pricerx/pricerx_scrape.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drug_curves/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drug_curves/curve_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pricerx/creating.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pricerx/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+        <state relative-caret-position="239">
+          <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>

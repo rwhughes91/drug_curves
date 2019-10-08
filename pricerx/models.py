@@ -17,6 +17,10 @@ class Base(Model):
 
 class Drug(Base):
     name = CharField()
+    manufacturer = CharField()
+
+    def __str__(self):
+        return "{0}-{1}".format(self.name, self.manufacturer)
 
 
 class DrugStrain(Base):
@@ -24,6 +28,10 @@ class DrugStrain(Base):
     strength = CharField()
     form = CharField()
     package = IntegerField()
+    n = IntegerField()
+
+    def __str__(self):
+        return "{0} Strain {1}".format(self.drug, self.n)
 
 
 class Price(Base):
@@ -31,21 +39,11 @@ class Price(Base):
     date = DateField()
     price = DecimalField()
 
-
-def add_data(df, drug_strain):
-    for index, row in df.iterrows():
-        date = row['Date'].date()
-        price = row['Price']
-        p = Price(strain=drug_strain, date=date, price=price)
-        p.save()
+    def __str__(self):
+        return "{0} Price: {1}".format(self.strain, self.price)
 
 
 def create_tables():
     Drug.create_table(safe=True)
     DrugStrain.create_table(safe=True)
     Price.create_table(safe=True)
-
-
-if __name__ == "__main__":
-    db.connect()
-    db.close()
