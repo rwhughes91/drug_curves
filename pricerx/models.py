@@ -1,6 +1,7 @@
 from peewee import *
 import os
 from pathlib import Path
+from playhouse.migrate import *
 
 path = Path(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(path.parent)
@@ -36,14 +37,30 @@ class DrugStrain(Base):
 
 class Price(Base):
     strain = ForeignKeyField(DrugStrain, backref="prices")
+    drug = ForeignKeyField(Drug, backref="prices")
     date = DateField()
     price = DecimalField()
 
     def __str__(self):
         return "{0} Price: {1}".format(self.strain, self.price)
 
+    def validated_safe_save(self):
+        assert self.drug == self.strain.drug
+        self.save()
+
 
 def create_tables():
-    Drug.create_table(safe=True)
-    DrugStrain.create_table(safe=True)
-    Price.create_table(safe=True)
+    with db:
+        safe = {"safe": True}
+        Drug.create_table(**safe)
+        DrugStrain.create_table(**safe)
+        Price.create_table(**safe)
+
+
+def drop_tables():
+    with db:
+        db.drop_tables([Drug, DrugStrain, Price])
+
+
+if __name__ == "__main__":
+    create_tables()

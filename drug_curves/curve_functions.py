@@ -7,7 +7,7 @@ def multi_index_column_rename(columns):
     """
     This function was created for importing in BB data.
     The idea is to preserve the shape of the columns being imported; however, the nans are converted to
-    'DATE'
+    'DATE'. The 'DATE' columns will later be dropped.
     """
     if type(columns) != pd.MultiIndex:
         raise TypeError("This function is for pd.MultiIndex columns")
@@ -25,6 +25,11 @@ def multi_index_column_rename(columns):
 
 
 def pricerx_data_fetching(drugs):
+    """
+    Used to query the desired drug data from the database. Returns a pandas df
+    :param drugs:
+    :return: pd.DataFrame
+    """
     # Testing parameter is type: list
     if type(drugs) != list:
         raise TypeError("drugs must be type: list")
@@ -57,11 +62,18 @@ def pricerx_data_fetching(drugs):
 
 
 def round_pricerx_prices(pricerx_df):
+    """
+    Takes in a specific dataframe (returned by pricerx_data_fetching) and rounds the effective dates.
+    :param pricerx_df:
+    :return: pd.DataFrame
+    """
+    # validating the input data
     if type(pricerx_df) != pd.DataFrame:
         raise TypeError("Needs to be a pd.DataFrame")
     elif list(pricerx_df.columns) != ["Drug", "Manufacturer", "Strength", "Package", "Form", "Effective Date", "Price"]:
         raise ValueError("this function is meant to be chained with pricerx_data_fetching function")
 
+    # Rounded the dates
     def round_date(date):
         if date.day < 15:
             last_day_in_month = monthrange(month=date.month, year=date.year)[1]
@@ -76,18 +88,28 @@ def round_pricerx_prices(pricerx_df):
 
 
 def expand_rounded_pricerx_prices(pricerx_df):
+    """
+    Takes in the returned dataframe from round_pricerx_prices
+    the functionality is similar to pd.date_range, but also captures current prices
+    this function will allow you to validate the data with a simple merge, easily pulling in the correct price
+    :param pricerx_df:
+    :return:
+    """
     if type(pricerx_df) != pd.DataFrame:
         raise TypeError("Needs to be a pd.DataFrame")
     elif list(pricerx_df.columns) != ["Drug", "Manufacturer", "Strength", "Package", "Form", "Effective Date",
                                       "Price", "Rounded Date"]:
         raise ValueError("this function is meant to be chained with the round_pricerx_prices function")
 
+    # grouping the data by 'uniqueness'
     list_of_unique_df_groups = []
     groups = pricerx_df.groupby(["Drug", "Manufacturer", "Strength", "Package", "Form"])
     for (name, manufacturer, strength, package, form), unique_frame in groups:
         list_of_unique_df_groups.append(unique_frame)
 
+    # expanding the frame
     def expand_frame(frame):
+        # validating the grouping
         columns_to_pull_for_test = ["Drug", "Manufacturer", "Strength", "Package", "Form"]
         if frame.loc[:, columns_to_pull_for_test].nunique().sum() != len(columns_to_pull_for_test):
             raise ValueError("Non unique groups need to be passed to this function")
@@ -110,6 +132,7 @@ def expand_rounded_pricerx_prices(pricerx_df):
 
             expanded_df = expanded_df.append(pd.DataFrame(current_price, index=date_range, columns=["Price"]))
 
+        # given the grouping, any i will pull the same value so i went with 0
         expanded_df["Drug"] = frame.loc[0, "Drug"]
         expanded_df["Manufacturer"] = frame.loc[0, "Manufacturer"]
         expanded_df["Strength"] = frame.loc[0, "Strength"]
@@ -118,6 +141,7 @@ def expand_rounded_pricerx_prices(pricerx_df):
 
         return expanded_df
 
+    # appending the groups on one another
     expanded_frame = pd.DataFrame()
     for frame in list_of_unique_df_groups:
         expanded_frame = expanded_frame.append(expand_frame(frame))
@@ -131,4 +155,4 @@ if __name__ == "__main__":
     drugs = ["Levophed Bitartrate", "Norepinephrine Bitartrate"]
     df = pricerx_data_fetching(drugs)
     df = round_pricerx_prices(df)
-    d = expand_rounded_pricerx_prices(df)
+    df_expanded = expand_rounded_pricerx_prices(df)
