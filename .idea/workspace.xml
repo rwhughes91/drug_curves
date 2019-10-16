@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="4a013e76-ef5a-45b1-94e7-c33dc211a09f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drug_curves/.pytest_cache/v/cache/nodeids" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/.pytest_cache/v/cache/nodeids" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drug_curves/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drug_curves/curve_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/curve_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/.ipynb_checkpoints/norepinephrine_drug_curve-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/norepinephrine/.ipynb_checkpoints/norepinephrine_drug_curve-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/norepinephrine_drug_curve.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/norepinephrine/norepinephrine_drug_curve.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pricerx/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pricerx/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pricerx/creating.py" beforeDir="false" afterPath="$PROJECT_DIR$/pricerx/creating.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pricerx/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pricerx/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drug_curves/test_curve_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/test_curve_functions.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,12 +34,24 @@
     <favorites_list name="drug_curves" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c38d655e-bc7b-4562-9d07-e2ed14e38dbd/console.sql">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/drug_curves/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="21">
-              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/drug_curves/curve_functions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="156" lean-forward="true" selection-start-line="156" selection-end-line="156" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,6 +72,7 @@
       <find>rounded_dates</find>
       <find>.column</find>
       <find>.columns</find>
+      <find>append</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -80,26 +92,27 @@
         <option value="$PROJECT_DIR$/drug_curves/norepinephrine/__init__.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/pricerx/pricerx_scrape.py" />
-        <option value="$PROJECT_DIR$/drug_curves/test_curve_functions.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c38d655e-bc7b-4562-9d07-e2ed14e38dbd/console_1.sql" />
         <option value="$PROJECT_DIR$/queries_playground.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c38d655e-bc7b-4562-9d07-e2ed14e38dbd/console_2.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c38d655e-bc7b-4562-9d07-e2ed14e38dbd/console_4.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c38d655e-bc7b-4562-9d07-e2ed14e38dbd/console_5.sql" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/drug_curves/__init__.py" />
         <option value="$PROJECT_DIR$/pricerx/__init__.py" />
-        <option value="$PROJECT_DIR$/drug_curves/curve_functions.py" />
         <option value="$PROJECT_DIR$/pricerx/models.py" />
         <option value="$PROJECT_DIR$/pricerx/creating.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c38d655e-bc7b-4562-9d07-e2ed14e38dbd/console.sql" />
+        <option value="$PROJECT_DIR$/drug_curves/test_curve_functions.py" />
+        <option value="$PROJECT_DIR$/drug_curves/__init__.py" />
+        <option value="$PROJECT_DIR$/drug_curves/curve_functions.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="840" />
     <option name="y" value="23" />
-    <option name="width" value="1186" />
-    <option name="height" value="963" />
+    <option name="width" value="840" />
+    <option name="height" value="966" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -109,6 +122,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,11 +143,6 @@
             </path>
             <path>
               <item name="drug_curves" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drug_curves" type="462c0819:PsiDirectoryNode" />
-              <item name="pricerx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="drug_curves" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
@@ -151,14 +160,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -167,7 +175,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -187,7 +195,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.creating">
+  <component name="RunManager" selected="Python.curve_functions">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="drug_curves" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -214,6 +222,9 @@
       <module name="drug_curves" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pricerx" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -233,9 +244,6 @@
       <module name="drug_curves" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/drug_curves" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -255,6 +263,9 @@
       <module name="drug_curves" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pricerx" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -340,10 +351,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.creating" />
-        <item itemvalue="Python.models" />
         <item itemvalue="Python tests.pytest for test_curve_functions.TestMultiIndexColumnRename" />
         <item itemvalue="Python.test_curve_functions" />
+        <item itemvalue="Python.creating" />
+        <item itemvalue="Python.models" />
         <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
@@ -373,7 +384,9 @@
       <workItem from="1570583264167" duration="23201000" />
       <workItem from="1570668427612" duration="3269000" />
       <workItem from="1570682956379" duration="910000" />
-      <workItem from="1570742941265" duration="8011000" />
+      <workItem from="1570742941265" duration="9378000" />
+      <workItem from="1570822684922" duration="4033000" />
+      <workItem from="1571016454422" duration="4225000" />
     </task>
     <servers />
   </component>
@@ -384,9 +397,15 @@
     <history-entry file="pytest_for_test_curve_functions_TestMultiIndexColumnRename - 2019.10.08 at 09h 49m 02s.xml">
       <configuration name="pytest for test_curve_functions.TestMultiIndexColumnRename" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_for_test_curve_functions_TestMultiIndexColumnRename - 2019.10.11 at 17h 10m 16s.xml">
+      <configuration name="pytest for test_curve_functions.TestMultiIndexColumnRename" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_curve_functions_TestMultiIndexColumnRename - 2019.10.11 at 17h 11m 30s.xml">
+      <configuration name="pytest for test_curve_functions.TestMultiIndexColumnRename" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86325000" />
+    <option name="totallyTimeSpent" value="95950000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -398,17 +417,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="963" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="966" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.54423076" visible="true" weight="0.17765568" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.54423076" visible="true" weight="0.20940171" />
       <window_info id="Structure" order="1" sideWeight="0.45576924" side_tool="true" weight="0.16727717" />
       <window_info id="Favorites" order="2" sideWeight="0.39927405" side_tool="true" weight="0.15262516" />
       <window_info id="DB Browser" order="3" weight="0.32967034" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32850242" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39975846" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28883496" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39951864" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.34819278" />
@@ -416,10 +435,10 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32729468" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32971016" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.501221" side_tool="true" weight="0.37198067" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4993895" weight="0.26506025" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.498779" weight="0.27294686" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4993895" weight="0.26449275" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.498779" visible="true" weight="0.29843563" />
       <window_info anchor="bottom" id="Jupyter" order="13" weight="0.32969698" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="14" visible="true" weight="0.36956522" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.36956522" />
       <window_info anchor="bottom" id="DB Execution Console" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -436,7 +455,8 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/drug_curves$pytest_for_test_curve_functions_TestMultiIndexColumnRename.coverage" NAME="pytest for test_curve_functions.TestMultiIndexColumnRename Coverage Results" MODIFIED="1570553341662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/drug_curves" />
+    <SUITE FILE_PATH="coverage/drug_curves$test_curve_functions.coverage" NAME="test_curve_functions Coverage Results" MODIFIED="1570838949727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/drug_curves" />
+    <SUITE FILE_PATH="coverage/drug_curves$pytest_for_test_curve_functions_TestMultiIndexColumnRename.coverage" NAME="pytest for test_curve_functions.TestMultiIndexColumnRename Coverage Results" MODIFIED="1570839089313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/drug_curves" />
     <SUITE FILE_PATH="coverage/drug_curves$curve_functions.coverage" NAME="curve_functions Coverage Results" MODIFIED="1570576100211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/drug_curves" />
   </component>
   <component name="editorHistoryManager">
@@ -465,13 +485,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pricerx/database.py" />
     <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/drug_curves/test_curve_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/ds_projects/drug_curves/pricing/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -538,23 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/curve_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="873">
-          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pricerx/creating.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
@@ -579,6 +575,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drug_curves/test_curve_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drug_curves/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drug_curves/curve_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="156" lean-forward="true" selection-start-line="156" selection-end-line="156" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -20,6 +20,7 @@ def multi_index_column_rename(columns):
             if i != (num_of_levels - 1):
                 col.append(list(frozen_series))
             else:
+                # "Date" columns will later be dropped, so good to fill all with "Date"
                 col.append(list(frozen_series.fillna("Date")))
         return pd.MultiIndex.from_arrays(col)
 
@@ -151,8 +152,10 @@ def expand_rounded_pricerx_prices(pricerx_df):
     return expanded_frame
 
 
+def pricerx_df_gen(drugs):
+    return expand_rounded_pricerx_prices(round_pricerx_prices(pricerx_data_fetching(drugs)))
+
+
 if __name__ == "__main__":
     drugs = ["Levophed Bitartrate", "Norepinephrine Bitartrate"]
-    df = pricerx_data_fetching(drugs)
-    df = round_pricerx_prices(df)
-    df_expanded = expand_rounded_pricerx_prices(df)
+    pricing_data = pricerx_df_gen(["Levophed Bitartrate", "Norepinephrine Bitartrate"])
