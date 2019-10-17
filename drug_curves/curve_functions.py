@@ -1,4 +1,6 @@
 import pandas as pd
+import math
+from itertools import zip_longest
 from pricerx import models
 from calendar import monthrange
 
@@ -159,3 +161,5 @@ def pricerx_df_gen(drugs):
 if __name__ == "__main__":
     drugs = ["Levophed Bitartrate", "Norepinephrine Bitartrate"]
     pricing_data = pricerx_df_gen(["Levophed Bitartrate", "Norepinephrine Bitartrate"])
+    a = list(range(1, 6))
+    b = list(range(6, 10))
