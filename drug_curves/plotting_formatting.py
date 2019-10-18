@@ -2,6 +2,7 @@ import math
 import operator
 import locale
 
+import pandas as pd
 from itertools import zip_longest
 from matplotlib.ticker import FuncFormatter
 from matplotlib.dates import DateFormatter
@@ -130,6 +131,85 @@ def organize_legend(ax):
 
 
 """ Pricing graph"""
+
+
+def finding_pct_changes(drug, manufacturer, df):
+    df_slice = df[[(drug, manufacturer)]].copy()
+    df_slice.columns = ["Price"]
+    df_slice["Pct_change"] = df_slice["Price"].pct_change().round(2)
+    return df_slice.loc[df_slice["Pct_change"] > 0, :].copy()
+
+
+def percentage_annotation(ax, df, offset=None, offset_x=0, offset_y=0, **kwargs):
+    """
+    If positional offset is applied to function, and it is a midpoint, the global offsets will not be applied to that
+    annotation
+    :param ax:
+    :param df:
+    :param offset: {
+            pos: {
+                coord_offset: (x, y),
+                midpoint: (False, True)
+            },
+            pos2: ...
+        }
+    :param offset_x: global shifts on x axis (in weeks)
+    :param offset_y: global shifts on y axis
+    """
+    if offset:
+        if type(offset) != dict:
+            raise TypeError("offset needs to be a map specifying index and offset for particular percentage")
+
+    # storing argument input to reset for each iteration
+    xx = offset_x
+    yy = offset_y
+
+    coords = []
+    for i, (index, row) in enumerate(df.iterrows()):
+        # Clearing offsets
+        offset_x = xx  # will equal function argument again
+        offset_y = yy  # will equal function argument again
+
+        # Calculating mid_point & creating input variables
+        date = index
+        new_price = row["Price"]
+        pct_change = row["Pct_change"]
+        old_price = new_price / (1 + pct_change)
+        mid_point = (new_price + old_price) / 2
+
+        # Applying specific positioned offset(s)
+        if offset:
+            if i in offset:
+                x, y = offset[i]["coord_offset"]
+                if "midpoint" in offset[i]:
+                    x_d, x_m = offset[i]["midpoint"]
+                    if x_d:
+                        date = x
+                        offset_x = 0
+                        x = 0
+                    if x_m:
+                        mid_point = y
+                        offset_y = 0
+                        y = 0
+                offset_x += x
+                offset_y += y
+
+        # Applying all offsets
+        if offset_x > 0:
+            date += pd.Timedelta(weeks=offset_x)
+        elif offset_x < 0:
+            date += pd.Timedelta(weeks=offset_x)
+        if offset_y > 0:
+            mid_point += offset_y
+        elif offset_y < 0:
+            mid_point += offset_y
+
+        # Formatting as a percentage
+        percentage = "{0:.0%}".format(pct_change)
+        # Annotating the graph
+        coords.append((date, mid_point))
+        ax.text(date, mid_point, percentage, **kwargs)
+    return coords
 
 
 if __name__ == "__main__":
