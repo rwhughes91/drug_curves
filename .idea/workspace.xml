@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a013e76-ef5a-45b1-94e7-c33dc211a09f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/drug_curves/table_formatting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/.ipynb_checkpoints/norepinephrine_drug_curve-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/norepinephrine/.ipynb_checkpoints/norepinephrine_drug_curve-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drug_curves/templates/tables_template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/norepinephrine_drug_curve.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/norepinephrine/norepinephrine_drug_curve.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/plotting_formatting.py" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/plotting_formatting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/templates/css/table_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/templates/css/table_styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/templates/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/templates/tables.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,15 +29,25 @@
     <favorites_list name="drug_curves" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/drug_curves/templates/tables_template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="756">
+              <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jupyter Notebook" />
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -96,6 +100,7 @@
         <option value="$PROJECT_DIR$/drug_curves/templates/tables.html" />
         <option value="$PROJECT_DIR$/drug_curves/table_formatting.py" />
         <option value="$PROJECT_DIR$/drug_curves/templates/css/table_styles.css" />
+        <option value="$PROJECT_DIR$/drug_curves/templates/tables_template.html" />
       </list>
     </option>
   </component>
@@ -123,12 +128,6 @@
               <item name="drug_curves" type="b2602c69:ProjectViewProjectNode" />
               <item name="drug_curves" type="462c0819:PsiDirectoryNode" />
               <item name="drug_curves" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="drug_curves" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drug_curves" type="462c0819:PsiDirectoryNode" />
-              <item name="drug_curves" type="462c0819:PsiDirectoryNode" />
-              <item name="norepinephrine" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="drug_curves" type="b2602c69:ProjectViewProjectNode" />
@@ -396,7 +395,7 @@
       <workItem from="1570742941265" duration="9378000" />
       <workItem from="1570822684922" duration="4033000" />
       <workItem from="1571016454422" duration="46736000" />
-      <workItem from="1571413976405" duration="45053000" />
+      <workItem from="1571413976405" duration="45737000" />
     </task>
     <servers />
   </component>
@@ -415,7 +414,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183514000" />
+    <option name="totallyTimeSpent" value="184198000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -428,6 +427,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="965" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.54423076" visible="true" weight="0.17338218" />
       <window_info id="Structure" order="1" sideWeight="0.45576924" side_tool="true" weight="0.16727717" />
@@ -444,7 +444,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32729468" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32971016" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.501221" side_tool="true" weight="0.37198067" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4993895" visible="true" weight="0.22771084" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4993895" visible="true" weight="0.34096387" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.498779" weight="0.32258064" />
       <window_info anchor="bottom" id="Jupyter" order="13" weight="0.32969698" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.36956522" />
@@ -660,11 +660,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/drug_curves/templates/tables.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2709">
-          <caret line="129" column="7" selection-start-line="129" selection-start-column="7" selection-end-line="129" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#td#1;n#tr#0;n#tbody#0;n#table#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1123">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drug_curves/templates/tables_template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
         </state>
       </provider>
     </entry>
