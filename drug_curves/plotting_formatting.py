@@ -127,7 +127,7 @@ def organize_legend(ax):
     handles, labels = ax.get_legend_handles_labels()
     h = list(sorted(zip(handles, labels), key=operator.itemgetter(1)))
     handles2, labels2 = sort_legend(h)
-    ax.legend(handles2, labels2, loc="upper center", ncol=math.ceil(len(h) / 2), bbox_to_anchor=(.47, -0.12), frameon=False)
+    ax.legend(handles2, labels2, loc="upper center", ncol=math.ceil(len(h) / 2), bbox_to_anchor=(.47, -0.13), frameon=False)
 
 
 """ Pricing graph"""
