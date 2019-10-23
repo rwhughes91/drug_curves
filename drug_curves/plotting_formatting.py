@@ -18,7 +18,7 @@ color_map_universal = {
     "orange": (237, 125, 49),
     "grey": (128, 128, 128),
     "blue-grey": (51, 63, 79),
-    "black": (89, 89, 89),
+    "black": (66, 66, 66),
     "red": (192, 0, 0)
 }
 

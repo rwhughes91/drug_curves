@@ -2,25 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a013e76-ef5a-45b1-94e7-c33dc211a09f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/drug_curves/templates/css/wp_styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/drug_curves.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/drug_curves.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/.ipynb_checkpoints/norepinephrine_drug_curve-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/norepinephrine/.ipynb_checkpoints/norepinephrine_drug_curve-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/Norepinephrine U.S. Market.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/norepinephrine_drug_curve.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/norepinephrine/norepinephrine_drug_curve.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/price.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/volume.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/wac.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/table_formatting.py" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/table_formatting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/templates/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/templates/tables.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/templates/tables_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/templates/tables_template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/activate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/activate.csh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/activate.fish" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/python" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/bin/python3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pyvenv.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/reports/Norepinephrine U.S. Market.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/norepinephrine/reports/Norepinephrine U.S. Market.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/reports/price.png" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/norepinephrine/reports/price.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/reports/volume.png" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/norepinephrine/reports/volume.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/reports/wac.png" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/norepinephrine/reports/wac.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drug_curves/plotting_formatting.py" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/plotting_formatting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drug_curves/templates/css/wp_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/templates/css/wp_styles.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +35,17 @@
     <favorites_list name="drug_curves" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/drug_curves/templates/css/wp_styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -79,9 +78,9 @@
       <find>&lt;br&gt;</find>
       <find>css</find>
       <find>.jpg</find>
-      <find>border</find>
       <find>margin-top</find>
       <find>th</find>
+      <find>border</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -118,7 +117,6 @@
         <option value="$PROJECT_DIR$/drug_curves/table_functions.py" />
         <option value="$PROJECT_DIR$/drug_curves/table.py" />
         <option value="$PROJECT_DIR$/drug_curves/__init__.py" />
-        <option value="$PROJECT_DIR$/drug_curves/plotting_formatting.py" />
         <option value="$PROJECT_DIR$/drug_curves/templates/footer.html" />
         <option value="$PROJECT_DIR$/drug_curves/templates/header.html" />
         <option value="$PROJECT_DIR$/drug_curves/templates/tables_template.html" />
@@ -126,8 +124,9 @@
         <option value="$PROJECT_DIR$/drug_curves/templates/css/weasyprint_syles.css" />
         <option value="$PROJECT_DIR$/drug_curves/templates/tables.html" />
         <option value="$PROJECT_DIR$/drug_curves/norepinephrine/reports/Norepinephrine U.S. Market.html" />
-        <option value="$PROJECT_DIR$/drug_curves/templates/css/wp_styles.css" />
         <option value="$PROJECT_DIR$/drug_curves/table_formatting.py" />
+        <option value="$PROJECT_DIR$/drug_curves/plotting_formatting.py" />
+        <option value="$PROJECT_DIR$/drug_curves/templates/css/wp_styles.css" />
       </list>
     </option>
   </component>
@@ -419,7 +418,7 @@
       <workItem from="1570742941265" duration="9378000" />
       <workItem from="1570822684922" duration="4033000" />
       <workItem from="1571016454422" duration="46736000" />
-      <workItem from="1571413976405" duration="87003000" />
+      <workItem from="1571413976405" duration="91530000" />
     </task>
     <servers />
   </component>
@@ -438,7 +437,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225464000" />
+    <option name="totallyTimeSpent" value="229991000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -451,6 +450,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="994" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.54423076" visible="true" weight="0.17625134" />
       <window_info id="Structure" order="1" sideWeight="0.45576924" side_tool="true" weight="0.16727717" />
@@ -459,7 +459,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.4749709" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.28883496" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39951864" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993015" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.34819278" />
@@ -467,7 +467,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32729468" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32971016" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.501221" side_tool="true" weight="0.37198067" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4993895" weight="0.30156952" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4993895" weight="0.30151337" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.498779" weight="0.4147982" />
       <window_info anchor="bottom" id="Jupyter" order="13" weight="0.32969698" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.36956522" />
@@ -488,6 +488,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/drug_curves$test_curve_functions.coverage" NAME="test_curve_functions Coverage Results" MODIFIED="1570838949727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/drug_curves" />
+    <SUITE FILE_PATH="coverage/drug_curves$table_formatting.coverage" NAME="table_formatting Coverage Results" MODIFIED="1571871614832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/drug_curves" />
     <SUITE FILE_PATH="coverage/drug_curves$pytest_for_test_curve_functions_TestMultiIndexColumnRename.coverage" NAME="pytest for test_curve_functions.TestMultiIndexColumnRename Coverage Results" MODIFIED="1570839089313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/drug_curves" />
     <SUITE FILE_PATH="coverage/drug_curves$curve_functions.coverage" NAME="curve_functions Coverage Results" MODIFIED="1570576100211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/drug_curves" />
   </component>
@@ -647,16 +648,6 @@
     <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/price.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/plotting_formatting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="46" column="31" lean-forward="true" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/drug_curves/templates/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -720,12 +711,6 @@
     <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/reports/price.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/reports/volume.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/reports/wac.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/drug_curves/templates/tables.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -733,19 +718,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/reports/Norepinephrine U.S. Market.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="n#style#0;n#tr#1;n#thead#0;n#table#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/drug_curves/table_formatting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
+        <state relative-caret-position="2299">
           <caret line="149" column="21" lean-forward="true" selection-start-line="149" selection-start-column="21" selection-end-line="149" selection-end-column="21" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -753,10 +728,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/drug_curves/plotting_formatting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/reports/Norepinephrine U.S. Market.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#tr#1;n#thead#0;n#table#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/reports/volume.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/reports/wac.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/drug_curves/templates/css/wp_styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        <state relative-caret-position="294">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
         </state>
       </provider>
     </entry>

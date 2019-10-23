@@ -21,7 +21,7 @@ table.report {
 }
 table.report tr:first-child th {
     background-color: rgb(51, 63, 79);
-    border: 1px solid black;
+    border: 0.7px solid black;
     color: white;
     text-align: center;
 }
@@ -30,10 +30,9 @@ table.report tbody tr:last-child {
 }
 table.report tr:last-child td {
     background-color: rgb(221, 235, 247);
-    border-bottom: 3px solid black;
 }
 table.report td {
-    border: 1px solid black !important;
+    border: 0.7px solid black !important;
     text-align: right;
     padding: 0 1% 0 1%;
 }
@@ -53,7 +52,7 @@ table.report.volume tr:first-child th {
 table.report.volume tr:nth-child(2) th {
     background-color: rgb(51, 63, 79);
     color: white;
-    border: 1px solid black;
+    border: 0.7px solid black;
     text-align: center !important;
 }
 table.report.volume td:last-child {
