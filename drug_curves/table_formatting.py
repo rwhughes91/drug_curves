@@ -30,9 +30,9 @@ class Report:
             },
         }
         self.graphs = {
-            "VolumeGraph": 'volume.jpg',
-            "PriceGraph": 'price.jpg',
-            "WacGraph": 'wac.jpg',
+            "VolumeGraph": 'volume.png',
+            "PriceGraph": 'price.png',
+            "WacGraph": 'wac.png',
         }
         self.full_report = base_html.replace("(% Title %)", title)
 
@@ -58,7 +58,12 @@ class Report:
             image_tag = '\n    <img src="{}">'.format(chart)
             self.full_report = self.full_report.replace(escape_char, image_tag)
 
-    def generate_report(self):
+    def generate_report(self, weasyprint=False):
+        if weasyprint:
+            l = '<link rel = "stylesheet" href = "../../templates/css/wp_styles.css">'
+        else:
+            l = '<link rel = "stylesheet" href = "../../templates/css/table_styles.css">'
+        self.full_report = self.full_report.replace("(% print %)", l)
         for key, values in self.counter.items():
             if values["count"] > 0:
                 table_html = ""
@@ -141,7 +146,7 @@ class Report:
             if wide:
                 classes += " wide"
             html = annualized_for_data.to_html(index=False).replace("dataframe", classes)
-            str_add_on = "<br> (Based on Trailing {} Month".format(n)
+            str_add_on = '<br> <span class="small">(Based on Trailing {} Month</span>'.format(n)
             if n > 1:
                 str_add_on += "s"
             str_add_on += ")"

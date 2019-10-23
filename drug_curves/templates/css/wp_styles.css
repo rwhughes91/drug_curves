@@ -1,0 +1,82 @@
+body {
+    font-family: "Open Sans";
+}
+h1 {
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto;
+}
+td, th {
+    font-size: 9px;
+}
+img {
+    border: 1px solid lightgray;
+    margin-top: 8px;
+    width: 100%;
+}
+table.report {
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: 10px 4% 7px;
+}
+table.report tr:first-child th {
+    background-color: rgb(51, 63, 79);
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+}
+table.report tbody tr:last-child {
+    border-top: 2px solid black;
+}
+table.report tr:last-child td {
+    background-color: rgb(221, 235, 247);
+    border-bottom: 3px solid black;
+}
+table.report td {
+    border: 1px solid black !important;
+    text-align: right;
+    padding: 0 1% 0 1%;
+}
+table.report td:first-child {
+    text-align: center;
+}
+table.report td:last-child {
+    text-align: center;
+}
+table.report th span.small {
+    font-size: 8px;
+}
+table.report.volume tr:first-child th {
+    background-color: rgb(221, 235, 247);
+    color: black;
+}
+table.report.volume tr:nth-child(2) th {
+    background-color: rgb(51, 63, 79);
+    color: white;
+    border: 1px solid black;
+    text-align: center !important;
+}
+table.report.volume td:last-child {
+    text-align: right;
+}
+table.report.volume tr:first-child th:first-child {
+    background-color: transparent;
+    border: none;
+    -webkit-backface-visibility: hidden;
+}
+div.tables table.wide {
+    width: 500px !important;
+}
+div.tables table {
+    width: 375px !important;
+}
+@page {
+    size: letter;
+    margin-top: 1cm;
+    counter-increment: page;
+    @bottom-right {
+        content: counter(page);
+        font-size: 9px;
+        font-family: "Open Sans";
+    }
+}
