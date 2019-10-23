@@ -2,36 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% Title %}</title>
-    <link rel="stylesheet" href="css/table_styles.css">
+    <title>Drug Curve</title>
+    <link rel="stylesheet" href="../templates/css/table_styles.css">
 </head>
 <body>
     <div>
-        <h1 class="header">{% Title %}</h1>
+        <h1 class="header">(% Title %)</h1>
     </div>
     <div id="volume">
-        {% VolumeGraph %}
-        <div class="tables">
-            {% VolumeTable3 %}
-            <br>
-            {% VolumeTableA %}
-        </div>
+        <div class="image">(% VolumeGraph %)</div>
+        <div class="tables">(% VolumeTables %)</div>
     </div>
     <div id="price">
-        {% PriceGraph %}
-        <div class="tables">
-            {% PriceTableA %}
-        </div>
+        <div class="image">(% PriceGraph %)</div>
+        <div class="tables">(% PriceTables %)</div>
     </div>
     <div id="wac">
-        {% WacGraph %}
-        <div class="tabls">
-            {% WacGraphA %}
-            <br>
-            {% WacGraphB %}
-            <br>
-            {% WacGraphC %}
-        </div>
+        <div class="image">(% WacGraph %)</div>
+        <div class="tables">(% WacTables %)</div>
     </div>
 </body>
 </html>
