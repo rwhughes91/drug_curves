@@ -36,7 +36,7 @@ class Report:
         }
         self.full_report = base_html.replace("(% Title %)", title)
 
-        self.calculated_df = calculated_df
+        self.calculated_df = calculated_df.copy()
         self.title = title
         self.last_three_months = self.calculated_df.index.unique().sort_values(ascending=False)[:3]
         self.last_month = self.last_three_months[0]

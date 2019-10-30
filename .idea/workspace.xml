@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a013e76-ef5a-45b1-94e7-c33dc211a09f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/drug_curves/excel_exports.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reported_net_sales/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drug_curves/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/.ipynb_checkpoints/norepinephrine_drug_curve-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/norepinephrine/.ipynb_checkpoints/norepinephrine_drug_curve-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/norepinephrine_drug_curve.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/norepinephrine/norepinephrine_drug_curve.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/reports/Norepinephrine U.S. Market.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/norepinephrine/reports/Norepinephrine U.S. Market.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/reports/price.png" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/norepinephrine/reports/price.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/reports/volume.png" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/norepinephrine/reports/volume.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/norepinephrine/reports/wac.png" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/norepinephrine/reports/wac.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drug_curves/plotting_formatting.py" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/plotting_formatting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/templates/css/wp_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/templates/css/wp_styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drug_curves/table_formatting.py" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/table_formatting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pricerx/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pricerx/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,10 +38,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/drug_curves/templates/css/wp_styles.css">
+        <entry file="file://$PROJECT_DIR$/drug_curves/excel_exports.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="-1112">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -51,9 +52,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jupyter Notebook" />
-        <option value="Python Script" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -71,7 +72,6 @@
       <find>.wide</find>
       <find>{%</find>
       <find>n</find>
-      <find>n</find>
       <find>wide</find>
       <find>margin-to</find>
       <find>&lt;br</find>
@@ -81,6 +81,9 @@
       <find>margin-top</find>
       <find>th</find>
       <find>border</find>
+      <find>labels</find>
+      <find>red</find>
+      <find>pres Name</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -107,7 +110,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c38d655e-bc7b-4562-9d07-e2ed14e38dbd/console_5.sql" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/pricerx/__init__.py" />
-        <option value="$PROJECT_DIR$/pricerx/models.py" />
         <option value="$PROJECT_DIR$/pricerx/creating.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c38d655e-bc7b-4562-9d07-e2ed14e38dbd/console.sql" />
         <option value="$PROJECT_DIR$/drug_curves/test_curve_functions.py" />
@@ -116,7 +118,6 @@
         <option value="$PROJECT_DIR$/drug_curves/tables/tables.html" />
         <option value="$PROJECT_DIR$/drug_curves/table_functions.py" />
         <option value="$PROJECT_DIR$/drug_curves/table.py" />
-        <option value="$PROJECT_DIR$/drug_curves/__init__.py" />
         <option value="$PROJECT_DIR$/drug_curves/templates/footer.html" />
         <option value="$PROJECT_DIR$/drug_curves/templates/header.html" />
         <option value="$PROJECT_DIR$/drug_curves/templates/tables_template.html" />
@@ -124,9 +125,12 @@
         <option value="$PROJECT_DIR$/drug_curves/templates/css/weasyprint_syles.css" />
         <option value="$PROJECT_DIR$/drug_curves/templates/tables.html" />
         <option value="$PROJECT_DIR$/drug_curves/norepinephrine/reports/Norepinephrine U.S. Market.html" />
+        <option value="$PROJECT_DIR$/drug_curves/templates/css/wp_styles.css" />
+        <option value="$PROJECT_DIR$/pricerx/models.py" />
+        <option value="$PROJECT_DIR$/drug_curves/__init__.py" />
         <option value="$PROJECT_DIR$/drug_curves/table_formatting.py" />
         <option value="$PROJECT_DIR$/drug_curves/plotting_formatting.py" />
-        <option value="$PROJECT_DIR$/drug_curves/templates/css/wp_styles.css" />
+        <option value="$PROJECT_DIR$/drug_curves/excel_exports.py" />
       </list>
     </option>
   </component>
@@ -168,21 +172,6 @@
               <item name="norepinephrine" type="462c0819:PsiDirectoryNode" />
               <item name="reports" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="drug_curves" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-            <path>
-              <item name="drug_curves" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
-            <path>
-              <item name="drug_curves" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-              <item name="c38d655e-bc7b-4562-9d07-e2ed14e38dbd" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -209,8 +198,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/drug_curves/templates" />
       <recent name="$PROJECT_DIR$/drug_curves" />
+      <recent name="$PROJECT_DIR$/drug_curves/templates" />
       <recent name="$PROJECT_DIR$/drug_curves/norepinephrine" />
     </key>
   </component>
@@ -226,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.table_formatting">
+  <component name="RunManager" selected="Python.excel_exports">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="drug_curves" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -241,28 +230,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="creating" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="drug_curves" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pricerx" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pricerx/creating.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -293,13 +260,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="excel_exports" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="drug_curves" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/drug_curves" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/drug_curves/excel_exports.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="plotting_formatting" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="drug_curves" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/drug_curves" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -319,6 +302,9 @@
       <module name="drug_curves" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/drug_curves" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -374,19 +360,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.curve_functions" />
-      <item itemvalue="Python.creating" />
       <item itemvalue="Python.test_curve_functions" />
       <item itemvalue="Python.plotting_formatting" />
-      <item itemvalue="Python tests.pytest for test_curve_functions.TestMultiIndexColumnRename" />
       <item itemvalue="Python.table_formatting" />
+      <item itemvalue="Python tests.pytest for test_curve_functions.TestMultiIndexColumnRename" />
+      <item itemvalue="Python.excel_exports" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.table_formatting" />
+        <item itemvalue="Python.excel_exports" />
         <item itemvalue="Python.plotting_formatting" />
+        <item itemvalue="Python.table_formatting" />
         <item itemvalue="Python tests.pytest for test_curve_functions.TestMultiIndexColumnRename" />
         <item itemvalue="Python.test_curve_functions" />
-        <item itemvalue="Python.creating" />
       </list>
     </recent_temporary>
   </component>
@@ -418,7 +404,11 @@
       <workItem from="1570742941265" duration="9378000" />
       <workItem from="1570822684922" duration="4033000" />
       <workItem from="1571016454422" duration="46736000" />
-      <workItem from="1571413976405" duration="91530000" />
+      <workItem from="1571413976405" duration="93065000" />
+      <workItem from="1571973753745" duration="242000" />
+      <workItem from="1571974009007" duration="164000" />
+      <workItem from="1571974179481" duration="5968000" />
+      <workItem from="1572218865272" duration="22192000" />
     </task>
     <servers />
   </component>
@@ -437,7 +427,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229991000" />
+    <option name="totallyTimeSpent" value="260092000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -452,14 +442,14 @@
     <frame x="0" y="23" width="1920" height="994" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.54423076" visible="true" weight="0.17625134" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.54423076" visible="true" weight="0.13631523" />
       <window_info id="Structure" order="1" sideWeight="0.45576924" side_tool="true" weight="0.16727717" />
       <window_info id="Favorites" order="2" sideWeight="0.39927405" side_tool="true" weight="0.15262516" />
       <window_info id="DB Browser" order="3" weight="0.32967034" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.4749709" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.47380674" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.28883496" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993015" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39928487" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.34819278" />
@@ -467,8 +457,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32729468" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32971016" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.501221" side_tool="true" weight="0.37198067" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4993895" weight="0.30151337" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.498779" weight="0.4147982" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4993895" weight="0.25506556" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.498779" weight="0.30512515" />
       <window_info anchor="bottom" id="Jupyter" order="13" weight="0.32969698" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.36956522" />
       <window_info anchor="bottom" id="DB Execution Console" order="15" />
@@ -479,7 +469,7 @@
       <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="right" id="R Packages" order="5" sideWeight="0.49909255" weight="0.32967034" />
       <window_info anchor="right" x="0" y="0" width="370" height="757" id="Documentation" order="6" sideWeight="0.64746946" side_tool="true" weight="0.2991453" />
-      <window_info anchor="right" id="Database" order="7" weight="0.47802198" />
+      <window_info anchor="right" id="Database" order="7" weight="0.47763577" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" />
     </layout>
   </component>
@@ -491,6 +481,7 @@
     <SUITE FILE_PATH="coverage/drug_curves$table_formatting.coverage" NAME="table_formatting Coverage Results" MODIFIED="1571871614832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/drug_curves" />
     <SUITE FILE_PATH="coverage/drug_curves$pytest_for_test_curve_functions_TestMultiIndexColumnRename.coverage" NAME="pytest for test_curve_functions.TestMultiIndexColumnRename Coverage Results" MODIFIED="1570839089313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/drug_curves" />
     <SUITE FILE_PATH="coverage/drug_curves$curve_functions.coverage" NAME="curve_functions Coverage Results" MODIFIED="1570576100211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/drug_curves" />
+    <SUITE FILE_PATH="coverage/drug_curves$excel_exports.coverage" NAME="excel_exports Coverage Results" MODIFIED="1572326775857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/drug_curves" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/selenium/webdriver/firefox/webdriver.py">
@@ -552,49 +543,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pricerx/pricerx_scrape.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/geckodriver.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-190" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/norepinephrine_drug_curve.ipynb">
-      <provider selected="true" editor-type-id="jupyter-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pricerx/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="47" selection-start-column="47" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pricerx/creating.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pricerx/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="48" column="19" lean-forward="true" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c38d655e-bc7b-4562-9d07-e2ed14e38dbd/console.sql">
@@ -625,46 +576,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/table.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="86" selection-start-column="86" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/templates/price.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/price.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/templates/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/templates/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/volume.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/drug_curves/table.py" />
+    <entry file="file://$PROJECT_DIR$/drug_curves/templates/price.jpg" />
+    <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/price.jpg" />
+    <entry file="file://$PROJECT_DIR$/drug_curves/templates/footer.html" />
+    <entry file="file://$PROJECT_DIR$/drug_curves/templates/header.html" />
+    <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/volume.jpg" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -675,12 +592,8 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.groovy">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/Norepinephrine U.S. Market">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/price.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/Norepinephrine U.S. Market" />
+    <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/price.png" />
     <entry file="file://$PROJECT_DIR$/drug_curves/templates/tables_template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -695,19 +608,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/Norepinephrine U.S. Market.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#tr#1;n#thead#0;n#table#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/volume.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/Norepinephrine U.S. Market.html" />
+    <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/volume.png" />
     <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/reports/price.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -715,23 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/table_formatting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2299">
-          <caret line="149" column="21" lean-forward="true" selection-start-line="149" selection-start-column="21" selection-end-line="149" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drug_curves/plotting_formatting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -755,6 +640,80 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pricerx/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="47" selection-start-column="47" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pricerx/pricerx_scrape.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pricerx/creating.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pricerx/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-839">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drug_curves/norepinephrine/norepinephrine_drug_curve.ipynb">
+      <provider selected="true" editor-type-id="jupyter-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drug_curves/table_formatting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="38" column="49" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drug_curves/plotting_formatting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3638">
+          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drug_curves/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drug_curves/excel_exports.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1112">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>

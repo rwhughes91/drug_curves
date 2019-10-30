@@ -23,10 +23,20 @@ color_map_universal = {
 }
 
 
-def plt_color_conversion(mapper):
+def clamp(*x):
+    values = []
+    for l in x:
+        values.append(max(0, min(l, 255)))
+    return values
+
+
+def plt_color_conversion(mapper, type_f="plt"):
     adj_color_mapper = {}
     for key, value in mapper.items():
-        adj_color_mapper[key] = tuple(c/255 for c in value)
+        if type_f == "hex":
+            adj_color_mapper[key] = "#{0:02x}{1:02x}{2:02x}".format(*clamp(*value))
+        else:
+            adj_color_mapper[key] = tuple(c/255 for c in value)
     return adj_color_mapper
 
 
@@ -214,3 +224,4 @@ def percentage_annotation(ax, df, offset=None, offset_x=0, offset_y=0, **kwargs)
 
 if __name__ == "__main__":
     d = round_pricerx_prices(pricerx_data_fetching(["Levophed Bitartrate", "Norepinephrine Bitartrate"]))
+    e = plt_color_conversion(color_map_universal, type_f="hex")

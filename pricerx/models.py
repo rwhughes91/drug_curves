@@ -9,7 +9,7 @@ DATABASE = os.path.join(BASE_DIR, 'PricerxPrices.db')
 
 db = SqliteDatabase(DATABASE)
 
-
+"""Price_rx"""
 # Creating models for the database
 class Base(Model):
     class Meta:
@@ -60,6 +60,12 @@ def create_tables():
 def drop_tables():
     with db:
         db.drop_tables([Drug, DrugStrain, Price])
+
+
+"""drug data"""
+
+
+"""Reported Net sales"""
 
 
 if __name__ == "__main__":
