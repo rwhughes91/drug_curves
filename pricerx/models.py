@@ -11,6 +11,8 @@ db = SqliteDatabase(DATABASE)
 
 """Price_rx"""
 # Creating models for the database
+
+
 class Base(Model):
     class Meta:
         database = db
@@ -49,24 +51,40 @@ class Price(Base):
         self.save()
 
 
-def create_tables():
+class Rns(Base):
+    date = DateField()
+    quarter = CharField()
+    net_sales = DecimalField()
+    drug = ForeignKeyField(Drug, backref="sales")
+
+    def __str__(self):
+        return f"{self.drug}-{self.quarter}-${self.net_sales}"
+
+    def calc_quarter(self):
+        year = str(self.date.year)
+        month = self.date.month
+        if month > 9:
+            quarter = 4
+        elif month > 6:
+            quarter = 3
+        elif month > 3:
+            quarter = 2
+        else:
+            quarter = 1
+        return f"Q{quarter}'{year[2:]}"
+
+
+def create_tables(*tables):
     with db:
         safe = {"safe": True}
-        Drug.create_table(**safe)
-        DrugStrain.create_table(**safe)
-        Price.create_table(**safe)
+        for table in tables:
+            table.create_table(**safe)
 
 
-def drop_tables():
+def drop_tables(*tables):
     with db:
-        db.drop_tables([Drug, DrugStrain, Price])
-
-
-"""drug data"""
-
-
-"""Reported Net sales"""
+        db.drop_tables(tables)
 
 
 if __name__ == "__main__":
-    create_tables()
+    create_tables(Rns)

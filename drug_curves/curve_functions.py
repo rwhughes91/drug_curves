@@ -1,6 +1,4 @@
 import pandas as pd
-import math
-from itertools import zip_longest
 from pricerx import models
 from calendar import monthrange
 
@@ -9,7 +7,7 @@ def multi_index_column_rename(columns):
     """
     This function was created for importing in BB data.
     The idea is to preserve the shape of the columns being imported; however, the nans are converted to
-    'DATE'. The 'DATE' columns will later be dropped.
+    'DATE'.
     """
     if type(columns) != pd.MultiIndex:
         raise TypeError("This function is for pd.MultiIndex columns")
@@ -27,16 +25,9 @@ def multi_index_column_rename(columns):
         return pd.MultiIndex.from_arrays(col)
 
 
-def pricerx_data_fetching(drugs):
-    """
-    Used to query the desired drug data from the database. Returns a pandas df
-    :param drugs:
-    :return: pd.DataFrame
-    """
-    # Testing parameter is type: list
+def drug_data_fetching(drugs):
     if type(drugs) != list:
         raise TypeError("drugs must be type: list")
-
     # Connecting to the database
     with models.db:
         # Writing the query
@@ -46,20 +37,35 @@ def pricerx_data_fetching(drugs):
                 query += '''name = "{0}"'''.format(drug)
             else:
                 query += '''name = "{0}" OR '''.format(drug)
+        return list(models.Drug.raw(query))
 
-        # Querying the results
-        drugs_objects = list(models.Drug.raw(query))
-        data_to_be_added = []
-        for drug in drugs_objects:
-            for strain in drug.strains:
-                for price in strain.prices:
-                    data_to_be_added.append(
-                        [drug.name, drug.manufacturer, strain.strength, strain.package,
-                         strain.form, price.date, price.price]
-                    )
-        # Organizing data into a pandas df
-        columns = ["Drug", "Manufacturer", "Strength", "Package", "Form", "Effective Date", "Price"]
-        pricerx_df = pd.DataFrame(data_to_be_added, columns=columns)
+
+def rns_data_fetching(drugs):
+    drugs_objects = drug_data_fetching(drugs)
+    data_to_be_added = []
+    for drug in drugs_objects:
+        for sale in drug.sales:
+            data_to_be_added.append(
+                [drug.name, drug.manufacturer, sale.date, sale.quarter, sale.net_sales]
+            )
+    columns = ["Drug", "Manufacturer", "Date", "Quarter", "Reported Net Sales"]
+    rns_df = pd.DataFrame(data_to_be_added, columns=columns)
+    return rns_df
+
+
+def pricerx_data_fetching(drugs):
+    drugs_objects = drug_data_fetching(drugs)
+    data_to_be_added = []
+    for drug in drugs_objects:
+        for strain in drug.strains:
+            for price in strain.prices:
+                data_to_be_added.append(
+                    [drug.name, drug.manufacturer, strain.strength, strain.package,
+                     strain.form, price.date, price.price]
+                )
+    # Organizing data into a pandas df
+    columns = ["Drug", "Manufacturer", "Strength", "Package", "Form", "Effective Date", "Price"]
+    pricerx_df = pd.DataFrame(data_to_be_added, columns=columns)
 
     return pricerx_df
 

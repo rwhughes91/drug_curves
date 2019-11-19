@@ -120,24 +120,43 @@ def excelify(ax):
 """Formatting the legend"""
 
 
+def sort_legend_labels(handle_label):
+    label = handle_label[1]
+    if label == "Total":
+        return "Zzzzzzzzz"
+    else:
+        return label
+
+
 def sort_legend(array):
     # Creating number of columns to create in legend
     ncols = math.ceil(len(array) / 2)
     sorted_legend = []
+    last_item = array[-1]
+    array = array[:-1]
     for x, y in zip_longest(array[:ncols], array[ncols:]):
         sorted_legend.append(x)
         # If odd number last item will be None
         if y:
             sorted_legend.append(y)
-
+    if ncols % 2 == 0:
+        i = len(sorted_legend)
+    else:
+        i = len(sorted_legend) - 1
+    sorted_legend.insert(i, last_item)
     return zip(*sorted_legend)
 
 
 def organize_legend(ax):
     handles, labels = ax.get_legend_handles_labels()
-    h = list(sorted(zip(handles, labels), key=operator.itemgetter(1)))
-    handles2, labels2 = sort_legend(h)
-    ax.legend(handles2, labels2, loc="upper center", ncol=math.ceil(len(h) / 2), bbox_to_anchor=(.47, -0.13), frameon=False)
+    h = list(sorted(zip(handles, labels), key=sort_legend_labels))
+    if len(h) > 5:
+        ncol = math.ceil(len(h) / 2)
+        handles2, labels2 = sort_legend(h)
+    else:
+        ncol = len(h)
+        handles2, labels2 = handles, labels
+    ax.legend(handles2, labels2, loc="upper center", ncol=ncol, bbox_to_anchor=(.47, -0.13), frameon=False)
 
 
 """ Pricing graph"""
