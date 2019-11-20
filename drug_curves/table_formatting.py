@@ -1,6 +1,5 @@
 import os
 import pandas as pd
-import numpy as np
 
 from calendar import month_name
 from datetime import date, timedelta
@@ -75,6 +74,7 @@ class Report:
         self.calculated_df["Pres Name"] = self.calculated_df["Drug"].str.split(" ").str[0] \
                                           + " (" + self.calculated_df["Manufacturer"] + ")"
         self.rns_df = rns_data_fetching(list(self.calculated_df["Drug"].str.split().str[0].unique()))
+        self.last_reported = {}
         self.ttm_date = self.generate_ttm_date()
 
     def generate_ttm_date(self):
@@ -82,6 +82,7 @@ class Report:
         for name, group in self.rns_df.groupby("Drug"):
             if group["Date"].max() > d:
                 d = group["Date"].max()
+            self.last_reported[name] = group["Date"].max()
         return d
 
     def generate_ttm_df(self, title, how="wac"):
@@ -227,7 +228,9 @@ class Report:
 
         if convert_to_html:
             classes = "report"
-            if wide:
+            if est_sales:
+                classes += " extended_est wide"
+            elif wide:
                 classes += " wide"
             html = annualized_for_data.to_html(index=False).replace("dataframe", classes)
             str_add_on = '<br> <span class="small">(Based on Trailing {} Month</span>'.format(n)
@@ -291,7 +294,7 @@ class Report:
         else:
             return ttm_for_data
 
-    def rns_report(self, title, convert_to_html=False):
+    def rns_report(self, title, convert_to_html=False, footnotes={}):
         to_update = "WacTables"
         col_name = "Reported U.S. Net Sales"
         per_col_name = "Net to WAC"
@@ -323,6 +326,35 @@ class Report:
             str_add_on = '<br> <span class="small">(TTM Ended {})</span>'.format(self.ttm_date.strftime("%m/%d/%Y"))
             html = html.replace(col_name, col_name + str_add_on)
             html = html.replace("$", '<span style="float: left;">$</span>')
+            # Generating Footnotes
+            counter = 1
+            if footnotes:
+                for drug, message in footnotes.items():
+                    # Footnoting cell
+                    add_on = f"<sup>{counter}</sup>"  # HTML to add
+                    value = net_to_wac_for_df.loc[net_to_wac_for_df["Drug"].str.split().str[0] == drug, "Reported U.S. Net Sales"][0]
+                    value = value[1:]  # Stripping the $
+                    l = len(value)
+                    i = html.find(value)
+                    cutoff = i + l
+                    html = html[:cutoff] + add_on + html[cutoff:]
+                    # Adding footnote
+                    add_on = f"\n<p class='footnote'><sup>{counter}</sup>{message}</p>"
+                    html = html + add_on
+                    counter += 1
+            else:
+                footnotes = {}
+            # Auto generating footnotes based on available reported net sales
+            for drug_n, l_date in self.last_reported.items():
+                if drug_n not in footnotes:
+                    if l_date != self.ttm_date:
+                        # Footnoting cell
+
+                        # Adding footnote
+                        add_on = f"\n<p class='footnote'><sup>{counter}</sup>TTM ended {l_date}</p>"
+                        html = html + add_on
+                        counter += 1
+            # Updating report
             self.update_report(to_update, html)
             return html
         else:

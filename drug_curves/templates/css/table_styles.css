@@ -60,6 +60,17 @@ table.report.volume tr:first-child th:first-child {
     border: none;
     -webkit-backface-visibility: hidden;
 }
+table.report.extended_est td:last-child {
+    text-align: right !important;
+}
+
+table.report.extended_est td:nth-child(3) {
+    text-align: center !important;
+}
+p.footnote {
+    font-size: 12px;
+    margin: -8px 4% 0;
+}
 div.tables table.wide {
     width: 725px !important;
 }
