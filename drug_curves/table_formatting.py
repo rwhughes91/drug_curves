@@ -33,7 +33,7 @@ def volume_formatter(val):
 
 
 def wac_formatter(val):
-    if val == "Does not break out U.S. Sales":
+    if val == "U.S. sales not reported":
         return val
     else:
         val = f"{val:,}"
@@ -119,13 +119,28 @@ class Report:
         self.counter[to_update]["count"] += 1
         self.counter[to_update]["table_html"].append(html)
 
-    def add_graphs(self, graphs):
+    def add_graphs(self, graphs, footnotes={}):
+        # Generating superscript symbol
+        sup = "<sup>*</sup>"
         for key, chart in graphs.items():
+            counter = 1
+            # Adding in the chart
             escape_char = "(% {} %)".format(key)
             image_tag = '\n    <img src="{}">'.format(chart)
+            if key in footnotes:
+                add_on = ""
+                # If multiple footnotes per graph
+                if type(footnotes[key]) == list:
+                    for footnote in footnotes[key]:
+                        sup = f"{counter}. "
+                        add_on = add_on + f'\n    <p class="footnote graph">{sup}{footnote}</p>'
+                        counter += 1
+                else:
+                    add_on = f'\n    <p class="footnote graph">{sup}{footnotes[key]}</p>'
+                image_tag = image_tag + add_on
             self.full_report = self.full_report.replace(escape_char, image_tag)
 
-    def generate_report(self, weasyprint=False):
+    def generate_report(self, weasyprint=False, graph_footnotes={}):
         if weasyprint:
             l = '<link rel = "stylesheet" href = "../../templates/css/wp_styles.css">'
         else:
@@ -143,7 +158,7 @@ class Report:
                 table_html = ""
             escape_char = "(% {} %)".format(key)
             self.full_report = self.full_report.replace(escape_char, table_html)
-        self.add_graphs(self.graphs)
+        self.add_graphs(self.graphs, graph_footnotes)
         return self.full_report
 
     def three_month_volume_report(self, volume_units_name, title, convert_to_html=True):
@@ -294,7 +309,7 @@ class Report:
         else:
             return ttm_for_data
 
-    def rns_report(self, title, convert_to_html=False, footnotes={}):
+    def rns_report(self, title, convert_to_html=False, footnotes={}, periods=False):
         to_update = "WacTables"
         col_name = "Reported U.S. Net Sales"
         per_col_name = "Net to WAC"
@@ -308,8 +323,8 @@ class Report:
         # Adding a total row
         net_to_wac_df.loc["Total", "Reported U.S. Net Sales"] = net_to_wac_df["Reported U.S. Net Sales"].sum()
         # Replacing specific nans
-        net_to_wac_df["Reported U.S. Net Sales"] = net_to_wac_df["Reported U.S. Net Sales"].fillna("Does not break out U.S. Sales")
-        net_to_wac_df.loc[net_to_wac_df["Reported U.S. Net Sales"] == "Does not break out U.S. Sales", "Net to WAC"] = 999999.99
+        net_to_wac_df["Reported U.S. Net Sales"] = net_to_wac_df["Reported U.S. Net Sales"].fillna("U.S. sales not reported")
+        net_to_wac_df.loc[net_to_wac_df["Reported U.S. Net Sales"] == "U.S. sales not reported", "Net to WAC"] = 999999.99
         # Formatting the data into strings
         if convert_to_html:
             net_to_wac_for_df = pd.DataFrame(net_to_wac_df[col_name].apply(wac_formatter))
@@ -349,9 +364,17 @@ class Report:
                 if drug_n not in footnotes:
                     if l_date != self.ttm_date:
                         # Footnoting cell
-
+                        add_on = f"<sup>{counter}</sup>"  # HTML to add
+                        value = net_to_wac_for_df.loc[net_to_wac_for_df["Drug"].str.split().str[0] == drug, "Reported U.S. Net Sales"][0]
+                        value = value[1:]  # Stripping the $
+                        l = len(value)
+                        i = html.find(value)
+                        cutoff = i + l
+                        html = html[:cutoff] + add_on + html[cutoff:]
                         # Adding footnote
                         add_on = f"\n<p class='footnote'><sup>{counter}</sup>TTM ended {l_date}</p>"
+                        if periods:
+                            add_on = f"\n<p class='footnote'><sup>{counter}</sup>TTM ended {l_date}.</p>"
                         html = html + add_on
                         counter += 1
             # Updating report

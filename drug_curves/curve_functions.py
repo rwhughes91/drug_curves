@@ -15,8 +15,12 @@ def multi_index_column_rename(columns):
         num_of_levels = len(columns.levels)
         col = []
         for i in range(num_of_levels):
-            # title the elements of the series
-            frozen_series = pd.Series(columns.get_level_values(i)).str.title()
+            # Converting integers to strings so they arent dropped with str.title()
+            o_series = pd.Series(columns.get_level_values(i))
+            ints = o_series[o_series.apply(lambda val: isinstance(val, int))]
+            o_series.loc[ints.index] = ints.astype(str)
+            # Title the elements of the series
+            frozen_series = o_series.str.title()
             if i != (num_of_levels - 1):
                 col.append(list(frozen_series))
             else:

@@ -169,7 +169,7 @@ def finding_pct_changes(drug, manufacturer, df):
     return df_slice.loc[df_slice["Pct_change"] > 0, :].copy()
 
 
-def percentage_annotation(ax, df, offset=None, offset_x=0, offset_y=0, **kwargs):
+def percentage_annotation(ax, df, offset=None, offset_x=0, offset_y=0, arrow=False, **kwargs):
     """
     If positional offset is applied to function, and it is a midpoint, the global offsets will not be applied to that
     annotation
@@ -238,6 +238,24 @@ def percentage_annotation(ax, df, offset=None, offset_x=0, offset_y=0, **kwargs)
         # Annotating the graph
         coords.append((date, mid_point))
         ax.text(date, mid_point, percentage, **kwargs)
+        # Applying Arrows
+        if arrow:
+            di = index
+            m = (new_price + old_price) / 2
+            if offset:
+                if i in offset:
+                    if offset[i]["arrow_offset"]:
+                        bot_x, top_x, bot_y, top_y = offset[i]["arrow_offset"]
+                        di += pd.Timedelta(weeks=bot_x)
+                        date += pd.Timedelta(weeks=top_x)
+                        m += bot_y
+                        mid_point += top_y
+            ax.annotate("", xytext=(date, mid_point), xy=(di, m),
+                        arrowprops={
+                            "color": kwargs["color"],
+                            "lw": 1.5,
+                            "arrowstyle": "->"
+                        })
     return coords
 
 

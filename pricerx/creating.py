@@ -4,7 +4,7 @@ from pathlib import Path
 
 from pricerx.models import Drug, DrugStrain, Price, Rns, db
 
-file = "ALK Inhibitors Market vRH.xlsx"
+file = "Vasopressin U.S. Market vRH.xlsx"
 sheet_name = "RNS"
 
 path = Path(os.path.abspath(__file__))
