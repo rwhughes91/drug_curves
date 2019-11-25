@@ -70,6 +70,12 @@ table.report.extended_est td:last-child {
 table.report.extended_est td:nth-child(3) {
     text-align: center !important;
 }
+table.report.one_drug tr:last-child td {
+    background-color: transparent !important;
+}
+table.report.one_drug tbody tr:last-child {
+    border-top: 1px solid black;
+}
 p.footnote {
     font-size: 8px;
     margin: -8px 4% 2px;

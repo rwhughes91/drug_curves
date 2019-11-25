@@ -85,7 +85,7 @@ class Report:
             self.last_reported[name] = group["Date"].max()
         return d
 
-    def generate_ttm_df(self, title, how="wac"):
+    def generate_ttm_df(self, title, how="wac", output=False):
         if how == "wac":
             last_month_reported = pd.Timestamp(self.ttm_date)
             last_month_cutoff = last_month_reported - timedelta(days=365)
@@ -95,6 +95,9 @@ class Report:
         ttm_df = self.calculated_df.loc[(self.calculated_df.index <= last_month_reported) &
                                         (self.calculated_df.index > last_month_cutoff), :].copy()
         ttm_df = ttm_df.pivot_table(index="Pres Name", values=title, aggfunc="sum")
+        # Dropping 0s if going to be turned into HTML
+        if output:
+            ttm_df = ttm_df.loc[ttm_df[title] > 0, :]
         return ttm_df.sort_values(title, ascending=False).copy()
 
     def generate_net_to_wac(self, title):
@@ -276,7 +279,11 @@ class Report:
         col_name = "TTM {}".format(col_c)
         per_col_name = "% of {}".format(col_c)
         # Grabbing the data
-        ttm_df = self.generate_ttm_df(unit_name, vol_or_wac)
+        if convert_to_html:
+            output = True
+        else:
+            output = False
+        ttm_df = self.generate_ttm_df(unit_name, vol_or_wac, output)
         # Naming
         ttm_df.index.name = "Drug"
         ttm_df.columns = [col_name]
@@ -309,7 +316,7 @@ class Report:
         else:
             return ttm_for_data
 
-    def rns_report(self, title, convert_to_html=False, footnotes={}, periods=False):
+    def rns_report(self, title, convert_to_html=True, footnotes={}, periods=False, skinny=False):
         to_update = "WacTables"
         col_name = "Reported U.S. Net Sales"
         per_col_name = "Net to WAC"
@@ -323,8 +330,11 @@ class Report:
         # Adding a total row
         net_to_wac_df.loc["Total", "Reported U.S. Net Sales"] = net_to_wac_df["Reported U.S. Net Sales"].sum()
         # Replacing specific nans
-        net_to_wac_df["Reported U.S. Net Sales"] = net_to_wac_df["Reported U.S. Net Sales"].fillna("U.S. sales not reported")
-        net_to_wac_df.loc[net_to_wac_df["Reported U.S. Net Sales"] == "U.S. sales not reported", "Net to WAC"] = 999999.99
+        if skinny:
+            net_to_wac_df.dropna(inplace=True)
+        else:
+            net_to_wac_df["Reported U.S. Net Sales"] = net_to_wac_df["Reported U.S. Net Sales"].fillna("U.S. sales not reported")
+            net_to_wac_df.loc[net_to_wac_df["Reported U.S. Net Sales"] == "U.S. sales not reported", "Net to WAC"] = 999999.99
         # Formatting the data into strings
         if convert_to_html:
             net_to_wac_for_df = pd.DataFrame(net_to_wac_df[col_name].apply(wac_formatter))
@@ -336,7 +346,10 @@ class Report:
         net_to_wac_for_df.reset_index(inplace=True)
         # Formatting the html
         if convert_to_html:
-            classes = "report"
+            if net_to_wac_for_df.shape[0] == 1:
+                classes = "report one_drug"
+            else:
+                classes = "report"
             html = net_to_wac_for_df.to_html(index=False).replace("dataframe", classes)
             str_add_on = '<br> <span class="small">(TTM Ended {})</span>'.format(self.ttm_date.strftime("%m/%d/%Y"))
             html = html.replace(col_name, col_name + str_add_on)

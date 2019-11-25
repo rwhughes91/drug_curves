@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a013e76-ef5a-45b1-94e7-c33dc211a09f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/drug_curves/_vasopressin/vasopressin_drug_curve.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drug_curves/_dte/DTE U.S. Market.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/_alk_inhibitors/.ipynb_checkpoints/ALK Inhibitors U.S. Market-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/_alk_inhibitors/.ipynb_checkpoints/ALK Inhibitors U.S. Market-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/_alk_inhibitors/ALK Inhibitors U.S. Market.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/_alk_inhibitors/ALK Inhibitors U.S. Market.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/_norepinephrine/.ipynb_checkpoints/norepinephrine_drug_curve-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/_norepinephrine/.ipynb_checkpoints/norepinephrine_drug_curve-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/_norepinephrine/norepinephrine_drug_curve.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/_norepinephrine/norepinephrine_drug_curve.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/curve_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/curve_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drug_curves/plotting_formatting.py" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/plotting_formatting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drug_curves/_vasopressin/.ipynb_checkpoints/vasopressin_drug_curve-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/_vasopressin/.ipynb_checkpoints/vasopressin_drug_curve-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drug_curves/_vasopressin/vasopressin_drug_curve.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/_vasopressin/vasopressin_drug_curve.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drug_curves/table_formatting.py" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/table_formatting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drug_curves/templates/css/table_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/templates/css/table_styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drug_curves/templates/css/wp_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/drug_curves/templates/css/wp_styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pricerx/creating.py" beforeDir="false" afterPath="$PROJECT_DIR$/pricerx/creating.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,43 +43,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>margin-top</find>
-      <find>th</find>
-      <find>border</find>
-      <find>labels</find>
-      <find>red</find>
-      <find>pres Name</find>
-      <find>xl_ro</find>
-      <find>Vials</find>
-      <find>percentage</find>
-      <find>Pres Name</find>
-      <find>col_c</find>
-      <find>pct</find>
-      <find>update_report</find>
-      <find>formatter</find>
-      <find>to_update</find>
-      <find>ttm_wac</find>
-      <find>rns_data</find>
-      <find>rns_df</find>
-      <find>generate_ttm_wac</find>
-      <find>g</find>
-      <find>generate_ttm_wac_df</find>
-      <find>4%</find>
-      <find>VolumeGraph</find>
-      <find>self.graphs</find>
-      <find>add_graphs</find>
-      <find>Does not break out U.S. Sal</find>
-      <find>U.S. sales</find>
-      <find>generate_r</find>
-      <find>&lt;sup</find>
-      <find>*</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="PATH_TO_GIT" value="/usr/bin/git" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -113,6 +71,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/drug_curves/_dte" />
       <recent name="$PROJECT_DIR$/drug_curves" />
       <recent name="$PROJECT_DIR$/drug_curves/templates" />
       <recent name="$PROJECT_DIR$/drug_curves/norepinephrine" />
@@ -352,7 +311,7 @@
       <workItem from="1574490382982" duration="31000" />
       <workItem from="1574490429545" duration="1022000" />
       <workItem from="1574503941767" duration="229000" />
-      <workItem from="1574545729172" duration="4032000" />
+      <workItem from="1574545729172" duration="9642000" />
     </task>
     <servers />
   </component>
